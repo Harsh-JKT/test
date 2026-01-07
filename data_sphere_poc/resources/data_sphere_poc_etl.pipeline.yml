@@ -1,0 +1,21 @@
+# The main pipeline for data_sphere_poc
+
+resources:
+  pipelines:
+    data_sphere_poc_etl:
+      name: data_sphere_poc_etl
+      # Catalog is required for serverless compute
+      catalog: main
+      schema: ${var.schema}
+      serverless: true
+      root_path: "../src/data_sphere_poc_etl"
+
+      libraries:
+        - glob:
+            include: ../src/data_sphere_poc_etl/transformations/**
+
+      environment:
+        dependencies:
+          # We include every dependency defined by pyproject.toml by defining an editable environment
+          # that points to the folder where pyproject.toml is deployed.
+          - --editable ${workspace.file_path}

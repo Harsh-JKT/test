@@ -1,0 +1,12 @@
+resources:
+  pipelines:
+    sales_discount_pipeline:
+      name: sales_discount_pipeline
+      serverless: true
+      channel: "PREVIEW"
+      catalog: ${var.catalog}
+      schema: ${var.schema}
+      root_path: "."
+      libraries:
+        - glob:
+            include: transformations/**
