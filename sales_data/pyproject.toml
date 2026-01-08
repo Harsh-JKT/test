@@ -1,5 +1,5 @@
 [project]
-name = "sales_data"
+name = "sales_data_poc_data_sphere"
 version = "0.0.1"
 authors = [{ name = "harsh.gupta@jkmail.com" }]
 requires-python = ">=3.10,<=3.13"

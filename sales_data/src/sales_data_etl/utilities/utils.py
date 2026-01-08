@@ -23,7 +23,6 @@ def read_from_s3_autoloader_with_time(
         .load(s3_path)
     )
 
-
 def auto_cdc_silver_table(
         target_table: str,
         source_table: str,

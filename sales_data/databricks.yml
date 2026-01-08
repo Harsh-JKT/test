@@ -1,7 +1,7 @@
 # This is a Databricks asset bundle definition for sales_data.
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 bundle:
-  name: sales_data
+  name: sales_data_poc_data_sphere
   uuid: f0dc4b14-4f33-4a3d-ae13-faa527d81ea3
 
 include:
