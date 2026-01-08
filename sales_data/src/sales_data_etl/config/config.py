@@ -1,5 +1,5 @@
 
-provisioned-tableau-data.raw_layer
+# provisioned-tableau-data.raw_layer
 
 TABLES = {
     "raw_sales_data": "`provisioned-tableau-data`.raw_layer.sales_data_bronze",
@@ -9,7 +9,7 @@ TABLES = {
 
 }
 S3_PATHS = {
-    "sales_data":"s3://sap-datasphere-poc/Sales_Data_ECC/"
+    "sales_data":"s3://sap-datasphere-poc/Sales_Data_ECC/initial/"
 }
 EXPECTIONS = {
     "sales_data": {
